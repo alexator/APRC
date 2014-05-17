@@ -1,0 +1,4 @@
+** Time of entry: 00:00:00  Title: Alex1
+Content: This is another day's test1
+** Time of entry: 00:00:00  Title: Alex2
+Content: This is another day's test2.

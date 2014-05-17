@@ -1,0 +1,168 @@
+package study_planner_pro;
+
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+public class StudyPlanner implements StudyPlannerInterface
+{
+    private ArrayList<TopicInterface> topics = new ArrayList<TopicInterface>();
+    private ArrayList<StudyBlockInterface> plan = new ArrayList<StudyBlockInterface>();
+    
+    private StudyPlannerGUIInterface gui;
+    
+    private int blockSize;
+
+
+    @Override
+    public void addTopic(String name, int duration) {
+       
+    	boolean flag_same = false;
+    	
+        for (int i = 0; i < getTopics().size(); i++) {
+        	if (getTopics().get(i).getSubject().equalsIgnoreCase(name)) {
+        		
+        		flag_same = true;
+        		throw new StudyPlannerException("Two topics have the same name!");
+        	}
+        }
+    	
+        if (!flag_same) {
+    		topics.add(new Topic(name, duration));
+    	}
+    }
+    
+
+    @Override
+    public List<TopicInterface> getTopics()
+    {
+        return topics;
+    }
+
+    @Override
+    public List<StudyBlockInterface> getStudyPlan()
+    {               
+        return plan;
+    }
+
+
+    public void setGUI(StudyPlannerGUIInterface gui)
+    {
+        this.gui = gui;
+    }
+
+    @Override
+    public void generateStudyPlan() {
+    	
+    	if (getTopics().isEmpty()) {
+    		
+    		throw new StudyPlannerException("There are no topics to create a plan!");
+    		
+    	} else {
+    		
+    		plan = new ArrayList<StudyBlockInterface>();	
+    		
+    		for (int i = 0; i < getTopics().size(); i++) {
+    			plan.add(new StudyBlock(topics.get(i).getSubject(), Calendar.getInstance(), topics.get(i).getDuration()-60));		
+    		}
+    	
+    		if (gui != null) {
+    			gui.notifyModelHasChanged();
+    		}   
+    	}
+    }
+    
+
+    @Override
+    public void deleteTopic(String topic) {
+    	for ( int i = 0; i < getTopics().size(); i++){
+    		if (getTopics().get(i).getSubject().equals(topic)) {
+    			topics.remove(i);
+    		}
+    	}
+    }
+
+    @Override
+    public void generateStudyPlan(Calendar startStudy) {
+    	if (getTopics().isEmpty()) {
+    		
+    		throw new StudyPlannerException("There are no topics to create a plan!");
+    		
+    	} else {
+    		
+    		plan = new ArrayList<StudyBlockInterface>();	
+    		
+    			for (int i = 0; i < topics.size(); i++ ) {
+    					plan.add(new StudyBlock(topics.get(i).getSubject(), startStudy, topics.get(i).getDuration()-60));
+    					}
+    	
+    		if (gui != null) {
+    			gui.notifyModelHasChanged();
+    		}   
+    	
+    }
+    	}
+
+    @Override
+    public void setBlockSize(int size) {
+    	blockSize = size;
+    }
+
+    @Override
+    public void setBreakLength(int i)
+    {
+    }
+
+    @Override
+    public void setDailyStartStudyTime(Calendar startTime)
+    {
+    }
+
+    @Override
+    public void setDailyEndStudyTime(Calendar endTime)
+    {
+    }
+
+    @Override
+    public Calendar getDailyStartStudyTime()
+    {
+        return null;
+    }
+
+    @Override
+    public Calendar getDailyEndStudyTime()
+    {
+        return null;
+    }
+
+    @Override
+    public void addCalendarEvent(String eventName, Calendar startTime, int duration)
+    {
+    }
+
+    @Override
+    public void addCalendarEvent(String eventName, Calendar startTime, int duration, CalendarEventType type)
+    {
+    }
+
+    @Override
+    public List<CalendarEventInterface> getCalendarEvents()
+    {
+        return null;
+    }
+
+    @Override
+    public void saveData(OutputStream saveStream)
+    {
+    }
+
+    @Override
+    public void loadData(InputStream loadStream)
+    {
+    }
+
+
+}

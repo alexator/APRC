@@ -1,0 +1,37 @@
+package syne4;
+import java.util.Random;
+
+class MyThread extends Thread
+{ // MyThread is a subclass of the Thread class. See on-line java documentation 
+  // for all the methods available for threads
+
+   public  void useCpu(double x)
+    // this method  uses some CPU
+   { double f=1.001;
+      int i;
+      for (i=1; i< x; i++)
+      { f=f*1.00001;
+      }
+   }
+
+
+// this method is called when the thread is "started". This is where
+// the logic of the thread goes
+   public void run()
+   {
+      int i;
+      Random r= new Random();
+      int w;
+   
+      for (i= 1 ; i<10; i++) // do it 10 times
+      { w=Math.abs(r.nextInt()%20000 ); 
+        // wait for some time
+         useCpu(w);
+      
+      	// and print something
+         System.out.println(getName() +" waited for "+w+ " units. Iteration i="+i);
+      }
+   
+   }
+
+}

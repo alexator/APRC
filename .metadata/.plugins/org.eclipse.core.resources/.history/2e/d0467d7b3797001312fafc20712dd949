@@ -1,0 +1,33 @@
+package syne4;
+
+class Create4 
+{
+
+   public static void main(String args[])
+   {
+	   Tick t1 = new Tick();
+	   t1.start();
+//	   Tick t2 = new Tick();
+//	   t2.start();
+//      System.out.println("Creating 4 threads");
+//   
+//      MyThread m1 = new MyThread();
+//      MyThread m2 = new MyThread();
+//      MyThread m3=  new MyThread();
+//      MyThread m4 = new MyThread();
+//   
+//      System.out.println("Finished creating threads... starting them");
+//      m1.start();
+//      System.out.println("Thread 0 created");
+//      m2.start();
+//      System.out.println("Thread 1 created");
+//      m3.start();
+//      System.out.println("Thread 2 created");
+//      m4.start();
+//      System.out.println("Thread 3 created");
+//   
+//   
+//      System.out.println("Finished creating  the threads");
+   
+   }
+}

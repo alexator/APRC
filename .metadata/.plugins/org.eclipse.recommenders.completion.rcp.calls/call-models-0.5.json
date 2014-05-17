@@ -1,0 +1,47 @@
+{
+  "/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/Users/Alex/Documents/workspace/java/mp3player/src": {
+    "location": "/Users/Alex/Documents/workspace/java/mp3player/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Documents/workspace/java/mp3player/src\u0027. Skipped."
+  },
+  "/Users/Alex/Documents/workspace/java/study_planner_pro/src": {
+    "location": "/Users/Alex/Documents/workspace/java/study_planner_pro/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Documents/workspace/java/study_planner_pro/src\u0027. Skipped."
+  },
+  "/Users/Alex/Documents/workspace/java/diary/src": {
+    "location": "/Users/Alex/Documents/workspace/java/diary/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Documents/workspace/java/diary/src\u0027. Skipped."
+  },
+  "/Users/Alex/Documents/workspace/java/football/src": {
+    "location": "/Users/Alex/Documents/workspace/java/football/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Documents/workspace/java/football/src\u0027. Skipped."
+  },
+  "/Users/Alex/Documents/workspace/java/japrc2013/src": {
+    "location": "/Users/Alex/Documents/workspace/java/japrc2013/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Documents/workspace/java/japrc2013/src\u0027. Skipped."
+  },
+  "/Users/Alex/Downloads/TheActivityClass/SourceFiles/Skeletons/ActivityLab/gen": {
+    "location": "/Users/Alex/Downloads/TheActivityClass/SourceFiles/Skeletons/ActivityLab/gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Downloads/TheActivityClass/SourceFiles/Skeletons/ActivityLab/gen\u0027. Skipped."
+  },
+  "/Users/Alex/Downloads/TheActivityClass/SourceFiles/Skeletons/ActivityLab/src": {
+    "location": "/Users/Alex/Downloads/TheActivityClass/SourceFiles/Skeletons/ActivityLab/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/Alex/Downloads/TheActivityClass/SourceFiles/Skeletons/ActivityLab/src\u0027. Skipped."
+  },
+  "/Users/Alex/Android Development/android-sdk-macosx/platforms/android-18/android.jar": {
+    "location": "/Users/Alex/Android Development/android-sdk-macosx/platforms/android-18/android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/Users/Alex/Android Development/android-sdk-macosx/platforms/android-18/android.jar\u0027. Neither fingerprint \u0027f4f6d0685c8372195356c55b8578565fe2487825\u0027 nor symbolic name \u0027android\u0027 are known."
+  }
+}

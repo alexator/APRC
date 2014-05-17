@@ -1,0 +1,20 @@
+Man City;10;20;12;21
+Man Utd;13;22;17;25
+Burnley;10;10;22;12
+Everton;9;12;15;11
+Chelsea;11;28;8;27
+Arsenal;9;29;13;19
+Tottenham;10;21;14;19
+Liverpool;10;24;13;18
+Aston Villa;9;13;8;17
+Sunderland;10;18;15;16
+Stoke;10;9;11;15
+Wigan;10;12;17;13
+Fulham;9;10;12;11
+Bolton;9;14;15;11
+Birmingham;10;8;12;10
+Blackburn;9;11;22;10
+Wolverhampton;10;9;16;9
+Hull;10;8;22;8
+West Ham;9;11;15;6
+Portsmouth;10;5;15;4
